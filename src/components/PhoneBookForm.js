@@ -27,6 +27,7 @@ const PhoneBookForm = (props) => {
     <form onSubmit={handleSubmit} className="card card-body">
       <div className="form-group input-group">
         <div className="input-group-text bg-light">
+        <i className="material-icons">account_circle</i>
         </div>
 
         <input
@@ -59,7 +60,7 @@ const PhoneBookForm = (props) => {
       </div>
       <div className="form-group input-group mt-2">
         <div className="input-group-text bg-light">
-          
+        <i className="material-icons">add_a_photo</i>
         </div>
         <input
           type="url"
