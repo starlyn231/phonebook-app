@@ -1,10 +1,10 @@
 import React from 'react'
-import PhoneBookForm from './PhoneBookForm'
+
 
 const Phone = () => {
     return (
         <div>
-            <PhoneBookForm/>
+           <h1>Visualizacion</h1>
         </div>
     )
 }
