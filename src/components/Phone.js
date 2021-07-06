@@ -50,7 +50,7 @@ const Phone = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col">
+        <div className="col-md-10">
           <Modal />
         </div>
       </div>
@@ -77,7 +77,7 @@ const Phone = () => {
                     <p className="text-center">{conctact.phone}</p>
                   </div>
 
-                  <div>
+                  <div className="d-flex flex-column m-2">
                     <i
                       className="material-icons text-danger"
                       onClick={() => onDeleteContact(conctact.id)}

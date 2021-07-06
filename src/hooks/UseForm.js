@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const UseForm = (initialStateValue, props, ValidateInfo) => {
+export const UseForm = (initialStateValue, addOrEditContact) => {
   const [values, setValues] = useState(initialStateValue);
 
   const [enteredNameTouched, setEnteredNmaeTouched] = useState(false);
@@ -30,7 +30,7 @@ export const UseForm = (initialStateValue, props, ValidateInfo) => {
     }
     setEnteredNmaeTouched(false);
     setEnteredPhoneTouched(false);
-    props.addOrEditContact(values);
+    addOrEditContact(values);
     setValues({ ...initialStateValue });
   };
 
@@ -69,4 +69,3 @@ export const UseForm = (initialStateValue, props, ValidateInfo) => {
     formIsValid,
   };
 };
-

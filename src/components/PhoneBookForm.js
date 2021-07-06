@@ -61,7 +61,10 @@ const PhoneBookForm = (props) => {
           value={values.name}
         />
         {nameInputIsInvalid && (
-          <p className="error-text"> Name Is Requerided please insert name</p>
+          <p className="error-text flex-column">
+            {" "}
+            Name is Requerided please insert number
+          </p>
         )}
         {/*<errors className="name"></errors> && (
           <span className="text-danger text-small d-block mb-2">
