@@ -10,18 +10,16 @@ const PhoneBookForm = (props) => {
   const [values, setValues] = useState(initialStateValue);
  
 
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setValues({ ...initialStateValue });
+    props.addOrEditContact(values);
   };
-
 
   return (
     <form onSubmit={handleSubmit} className="card card-body">

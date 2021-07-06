@@ -1,14 +1,15 @@
-
 import './App.css';
 import Phone from './components/Phone';
-import PhoneBookForm from './components/PhoneBookForm';
+
 
 function App() {
   return (
-    < >
- <PhoneBookForm/>
- <Phone/>
-    </>
+    <div className="container p-4">
+    <div className="row">
+      <Phone />
+    </div>
+    
+  </div>
   );
 }
 
