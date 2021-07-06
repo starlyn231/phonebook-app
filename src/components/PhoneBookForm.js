@@ -4,6 +4,9 @@ import { UseForm } from "../hooks/UseForm";
 import "./style.css";
 
 const PhoneBookForm = (props) => {
+  //estructuring Props
+  const { currentId, addOrEditContact, conctact } = props;
+
   const initialStateValue = {
     name: "",
     phone: "",
@@ -16,13 +19,13 @@ const PhoneBookForm = (props) => {
     handleSubmit,
     setValues,
     nameInputIsInvalid,
-  
+
     handleInputBlurPhone,
     phoneInputIsInvalid,
     phoneInputClasses,
     nameInputClasses,
     formIsValid,
-  } = UseForm(initialStateValue, props);
+  } = UseForm(initialStateValue, addOrEditContact);
 
   //const { isValid: enteredNameValid, hasError: nameInputHasError } =
   // ValidateInfo((value) => value.trim() !== "");
@@ -34,12 +37,12 @@ const PhoneBookForm = (props) => {
   };
 
   useEffect(() => {
-    if (props.currentId === "") {
+    if (currentId === "") {
       setValues({ ...initialStateValue });
     } else {
-      getConctactById(props.currentId);
+      getConctactById(currentId);
     }
-  }, [props.currentId]);
+  }, [currentId]);
 
   return (
     <form onSubmit={handleSubmit} className="card card-body">
@@ -106,7 +109,7 @@ const PhoneBookForm = (props) => {
         disabled={!formIsValid}
         className="btn btn-primary btn-block mt-2"
       >
-        {props.currentId === "" ? "Save" : "Update Contact"}
+        {currentId === "" ? "Save" : "Update Contact"}
       </button>
     </form>
   );
