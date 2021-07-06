@@ -8,7 +8,6 @@ export const UseForm = (initialStateValue, props, ValidateInfo) => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    //copy value current  and then input update coloque valor que esta utilizando
     setValues({ ...values, [name]: value });
   };
 
@@ -31,7 +30,6 @@ export const UseForm = (initialStateValue, props, ValidateInfo) => {
     }
     setEnteredNmaeTouched(false);
     setEnteredPhoneTouched(false);
-    //setError(ValidateInfo(values));
     props.addOrEditContact(values);
     setValues({ ...initialStateValue });
   };
@@ -72,4 +70,3 @@ export const UseForm = (initialStateValue, props, ValidateInfo) => {
   };
 };
 
-//export default UseForm
