@@ -19,7 +19,7 @@ En este CRUD puedes agregar un conctacto con la información del nombre, numero 
 ##Instalación
 ```
 $ git clone https://github.com/starlyn231/phonebook-app.git
-$ cd phoneboo-app
+$ cd phonebook-app
 $ npm install
 $ npm start
 ```
