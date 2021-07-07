@@ -4,14 +4,15 @@ import { UseForm } from "../hooks/UseForm";
 import "./style.css";
 
 const PhoneBookForm = (props) => {
-  //estructuring Props
-  const { currentId, addOrEditContact, conctact } = props;
+  //Destructuring Props
+  const { currentId, addOrEditContact } = props;
 
   const initialStateValue = {
     name: "",
     phone: "",
     url: "",
   };
+
   const {
     values,
     handleInputChange,
@@ -19,7 +20,6 @@ const PhoneBookForm = (props) => {
     handleSubmit,
     setValues,
     nameInputIsInvalid,
-
     handleInputBlurPhone,
     phoneInputIsInvalid,
     phoneInputClasses,
@@ -27,12 +27,8 @@ const PhoneBookForm = (props) => {
     formIsValid,
   } = UseForm(initialStateValue, addOrEditContact);
 
-  //const { isValid: enteredNameValid, hasError: nameInputHasError } =
-  // ValidateInfo((value) => value.trim() !== "");
-
   const getConctactById = async (id) => {
     const doc = await db.collection("conctact").doc(id).get();
-    // establece el valor en el form
     setValues({ ...doc.data() });
   };
 
@@ -66,12 +62,6 @@ const PhoneBookForm = (props) => {
             Name is Requerided please insert number
           </p>
         )}
-        {/*<errors className="name"></errors> && (
-          <span className="text-danger text-small d-block mb-2">
-            {errors.name}
-          </span>
-        )*/}
-        {/*errors.name && <p id="error">{errors.name}</p>*/}
       </div>
 
       <div className="form-group input-group mt-2">

@@ -34,6 +34,7 @@ export const UseForm = (initialStateValue, addOrEditContact) => {
     setValues({ ...initialStateValue });
   };
 
+  // validation form
   const enteredNameValid = values.name.trim() !== "";
   const nameInputIsInvalid = !enteredNameValid && enteredNameTouched;
 
@@ -53,6 +54,7 @@ export const UseForm = (initialStateValue, addOrEditContact) => {
   const phoneInputClasses = phoneInputIsInvalid
     ? "form-control invalid "
     : "form-control ";
+
   return {
     values,
     handleInputChange,
