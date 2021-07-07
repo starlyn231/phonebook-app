@@ -1,12 +1,12 @@
-##Bienvenidos al repositorio de phonebook-app
+## Bienvenidos al repositorio de phonebook-app
 
-####Información General 
+#### Información General 
 
 El presente proyecto trata sobre un CRUD de una agenda telefonica, que tiene como objetivo obtener, crear, actualizar y eliminar información de un conctacto telefónico desde el backen, en este caso utilice firebase. Para ser mas especifico utilice Cloud Firestore.
 
 En este CRUD puedes agregar un conctacto con la información del nombre, numero telefónico y foto. Luego de estar agregado puedes actualizar o eliminar la  información.
 
-##Tecnologías 
+##T ecnologías 
  Lista de tecnologías usadas:
 
 
@@ -16,7 +16,7 @@ En este CRUD puedes agregar un conctacto con la información del nombre, numero 
 * [React-toastify](https://github.com/fkhadra/react-toastify): Version 7.0.4
 
 
-##Instalación
+## Instalación
 ```
 $ git clone https://github.com/starlyn231/phonebook-app.git
 $ cd phonebook-app
