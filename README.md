@@ -2,7 +2,7 @@
 
 #### Información General 
 
-El presente proyecto trata sobre un CRUD de una agenda telefonica, que tiene como objetivo obtener, crear, actualizar y eliminar información de un conctacto telefónico desde el backen, en este caso utilice firebase. Para ser mas especifico utilice Cloud Firestore.
+El presente proyecto trata sobre un CRUD de una agenda telefonica, que tiene como objetivo obtener, crear, actualizar y eliminar información de un conctacto telefónico desde el backend, en este caso utilice firebase. Para ser mas especifico utilice Cloud Firestore.
 
 En este CRUD puedes agregar un conctacto con la información del nombre, numero telefónico y foto. Luego de estar agregado puedes actualizar o eliminar la  información.
 
