@@ -6,7 +6,7 @@ El presente proyecto trata sobre un CRUD de una agenda telefonica, que tiene com
 
 En este CRUD puedes agregar un conctacto con la información del nombre, numero telefónico y foto. Luego de estar agregado puedes actualizar o eliminar la  información.
 
-##T ecnologías 
+## Tecnologías 
  Lista de tecnologías usadas:
 
 
